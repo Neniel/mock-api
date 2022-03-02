@@ -7,8 +7,8 @@ import (
 )
 
 func GetPeopleInSpaceDataMock() *model.Response {
-	iss := int32(rand.Intn(10) + 1)
-	notIss := int32(rand.Intn(10) + 1)
+	iss := int32(rand.Intn(4) + 0)
+	notIss := int32(rand.Intn(4) + 0)
 
 	response := &model.Response{
 		Number:  iss + notIss,
