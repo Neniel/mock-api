@@ -9,9 +9,7 @@ COPY go.sum ./
 RUN go mod download
 
 COPY *.go ./
-COPY /controler ./
-COPY /model ./
-COPY /service ./
+COPY . ./
 
 RUN go build -o /mock-api
 
